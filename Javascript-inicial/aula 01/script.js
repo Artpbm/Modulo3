@@ -1,0 +1,1 @@
+alert("Cabelo tem 3 namoradas")
