@@ -1,7 +1,8 @@
 //Declara uma variavel com a sua idade
 const idade = 17
 //Declarar uma variavel com a sua comida preferida e atribuir um valor
-var comidapf = "Strogonoff"
+var comidapf 
+comidapf = "Strogonoff"
 // Declarar uma variavel e nao dar valor pra ela, sendo undefined
 var qualquer
 // Declarar 5 variaveis diferentes sem valores
