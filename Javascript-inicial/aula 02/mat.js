@@ -32,4 +32,64 @@ function somar(){
         document.getElementById("n8").style.border = "2px solid red"
     }
   
+  
    }
+
+   function media(){
+    var m1 = parseFloat(document.getElementById("m1").value)
+    var m2 = parseFloat(document.getElementById("m2").value)
+    var m3 = parseFloat(document.getElementById("m3").value)
+    var m4 = parseFloat(document.getElementById("m4").value)
+    var m5 = parseFloat(document.getElementById("m5").value)
+    var media = document.getElementById("respm")
+    
+    var res = (m1 + m2 + m3 + m4 + m5) / 5
+    
+    var msg = document.getElementById("msg")
+
+    if(res >= 7){
+        media.textContent = res
+        msg.textContent = "Passou!!!"
+        msg.style.color = "green"
+    }
+    else{
+        media.textContent = res
+        msg.textContent = "Reprovou!!!"
+        msg.style.color = "red"
+    }
+}
+
+    function obeso(){
+    var Peso = parseFloat(document.getElementById("Peso").value)
+    var Altura = parseFloat(document.getElementById("Altura").value)
+    var obeso = document.getElementById("respo")
+
+    var res = Peso / (Altura * Altura)
+    
+    var msg = document.getElementById("msgo")
+
+    if(res >= 40.0){
+     obeso.textContent = res.toFixed(1)
+     msg.textContent = "Obesidade grau III"
+    }
+    else if(res >= 35.0 && res <= 39.9){
+        obeso.textContent = res.toFixed(1)
+        msg.textContent = "Obesidade grau II"
+    }
+    else if(res >= 30.0 && res <= 34.9){
+        obeso.textContent = res.toFixed(1)
+        msg.textContent = "Obesidade grau I"
+    }
+    else if(res >= 25.0 && res <= 29.9){
+        obeso.textContent = res.toFixed(1)
+        msg.textContent = "Sobrepeso"
+    }
+    else if(res >= 18.6 && res <= 24.9){
+        obeso.textContent = res.toFixed(1)
+        msg.textContent = "Normal"
+    }
+    else if(res <= 18.5){
+        obeso.textContent = res.toFixed(1)
+        msg.textContent = "Abaixo do normal"
+    }
+}
