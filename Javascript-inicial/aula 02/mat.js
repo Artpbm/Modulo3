@@ -93,3 +93,20 @@ function somar(){
         msg.textContent = "Abaixo do normal"
     }
 }
+
+    function nascimento(){
+        var ano = parseFloat(document.getElementById("ano").value)
+        var idade = document.getElementById("respi")
+
+        var msg = document.getElementById("msgi")
+        var res = 2025 - ano
+
+        if(res >= 18){
+            idade.textContent = res
+            msg.textContent = "Pode entrar"
+        }
+        else{
+            idade.textContent = res
+            msg.textContent = "vaza daqui vagabunde"
+        }
+    }
