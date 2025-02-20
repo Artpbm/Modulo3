@@ -67,7 +67,12 @@ function somar(){
     var res = Peso / (Altura * Altura)
     
     var msg = document.getElementById("msgo")
-
+    
+    if(isNaN(peso) || isNaN(Altura)){
+        obeso.textContent = "Digite apenas números"
+        document.getElementById("msgo").textContent = " "
+        return
+    }
     if(res >= 40.0){
      obeso.textContent = res.toFixed(1)
      msg.textContent = "Obesidade grau III"
@@ -100,7 +105,10 @@ function somar(){
 
         var msg = document.getElementById("msgi")
         var res = 2025 - ano
-
+        
+        const thisyear = new Date().getFullYear
+        
+        
         if(res >= 18){
             idade.textContent = res
             msg.textContent = "Pode entrar"
