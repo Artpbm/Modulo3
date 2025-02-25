@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(blue, #3ac172); 
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.wrap-img {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.cartao1 {
+    background-color: #fff;
+    width: 16rem;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.cartao2 {
+    background-color: #fff;
+    width: 16rem;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.cartao3 {
+    background-color: #fff;
+    width: 16rem;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.cartao4 {
+    background-color: #fff;
+    width: 16rem;
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.cartao1:hover, .cartao2:hover, .cartao3:hover, .cartao4:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.cartao1:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.cartao2:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.cartao3:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.cartao4:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.wrap-img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.wrap-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
