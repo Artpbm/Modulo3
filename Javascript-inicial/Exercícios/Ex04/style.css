@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    gap: 150px;
+    background-color: blanchedalmond;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+div{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px
+}
+@media (width <= 600px){
+
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
